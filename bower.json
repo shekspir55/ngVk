@@ -1,0 +1,28 @@
+{
+  "name": "ngVk",
+  "main": "ngVk.js",
+  "homepage": "https://github.com/shekspir55/ngVk",
+  "authors": [
+    "Rouben Shekspir <shekspir55@gmail.com>"
+  ],
+  "description": "Vk wrapper for AngularJs.",
+  "moduleType": [],
+  "keywords": [
+    "vk.com",
+    "angular",
+    "wrapper",
+    "comments"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-load": "^0.4.1",
+    "angular": "angularjs#^1.5.0"
+  }
+}
