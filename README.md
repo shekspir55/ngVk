@@ -1,4 +1,4 @@
-# ngVk [![Bower](https://img.shields.io/bower/l/bootstrap.svg)](http://bower.io/)
+# ngVk [![Bower](https://img.shields.io/badge/bower-MIT-orange.svg)](http://bower.io) [![Ngmodules](https://img.shields.io/badge/ngmodules-package-red.svg)](http://ngmodules.org/modules/ngVk)
 
 This is simple vk.com angular wrapper. Compatible with [ui.router](https://github.com/angular-ui/ui-router).
 
