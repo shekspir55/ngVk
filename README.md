@@ -2,7 +2,7 @@
 
 [![Bower](https://img.shields.io/bower/l/bootstrap.svg)]()
 
-![ngVk logo](https://raw.githubusercontent.com/shekspir55/ngVk/master/ngVk.png)
+![ngvk](https://cloud.githubusercontent.com/assets/8617379/13033413/6de59018-d326-11e5-8415-b7d6bc69d590.png)
 
 
 This is simple vk.com angular wrapper. Compatible with [ui.router](https://github.com/angular-ui/ui-router).
