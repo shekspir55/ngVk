@@ -1,5 +1,5 @@
 # ngVk
-***
+
 [![Bower](https://img.shields.io/bower/l/bootstrap.svg)]()
 
 ![ngVk logo](https://raw.githubusercontent.com/shekspir55/ngVk/master/ngVk.png)
@@ -32,7 +32,7 @@ app.value('vkAppId', yourVkAppId);
     <vk-comments></vk-comments>
 ```
 Then simply put this to your html. Good luck.
-***
+
 # OPTIONS
 List of attributes can be used.
 * `url` (not required) Input identifier for comment-box, by default it's value refers to page url.
