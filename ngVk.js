@@ -19,15 +19,15 @@ angular
         });
     })
     .factory('vkApi', function () {
-        var factoryCallback = function () {
-
-        };
+        var factoryCallbacksArray = [];
         return {
             set: function (vkApi) {
-                factoryCallback(vkApi);
+                angular.forEach(factoryCallbacksArray, function (factoryCallback) {
+                    factoryCallback(vkApi);
+                });
             },
             onSet: function (callback) {
-                factoryCallback = callback;
+                factoryCallbacksArray.push(callback);
             }
         };
     })
@@ -45,8 +45,10 @@ angular
                     vkApi.onSet(function (vkApi) {
                         scope.$watch('readyToBind', function () {
                             $timeout(function () {
+                                scope.idRand = Math.floor(Math.random() * (9999999 - 1 + 1) + 1).toString(10);
+                                console.log(scope.idRand)
                                 $element.html('');
-                                $window.vkComment = vkApi.Widgets.Comments('vk_comments', {
+                                $window.vkComment = vkApi.Widgets.Comments('vk-comments-' + scope.idRand, {
                                     limit: 10,
                                     attach: '*',
                                     autoPublish: 1,
@@ -56,6 +58,6 @@ angular
                         });
                     });
                 },
-                template: '<div id="vk_comments" ng-transclude post-url="{{url}}"></div>'
+                template: '<div class="ngVk ngVkComments" id="vk-comments-{{idRand}}" ng-transclude post-url="{{url}}"></div>'
             }
         });
