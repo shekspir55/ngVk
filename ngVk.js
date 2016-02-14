@@ -1,13 +1,19 @@
+'use strict';
+
 angular
     .module('ngVk', [
         'angularLoad'
     ])
     .factory('vkSimplekHash', function () {
         return function (str) {
-            str.split("").reduce(function (a, b) {
-                a = ((a << 5) - a) + b.charCodeAt(0);
-                return a & a
-            }, 0);
+            var hash = 0;
+            if (str.length == 0) return hash;
+            for (var i = 0; i < str.length; i++) {
+                var char = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash; // Convert to 32bit integer
+            }
+            return hash;
         }
     })
     .run(function (vkAppId, angularLoad, vkApi) {
@@ -46,7 +52,6 @@ angular
                         scope.$watch('readyToBind', function () {
                             $timeout(function () {
                                 scope.idRand = Math.floor(Math.random() * (9999999 - 1 + 1) + 1).toString(10);
-                                console.log(scope.idRand)
                                 $element.html('');
                                 $window.vkComment = vkApi.Widgets.Comments('vk-comments-' + scope.idRand, {
                                     limit: 10,
@@ -54,7 +59,7 @@ angular
                                     autoPublish: 1,
                                     mini: 1
                                 }, vkSimplekHash(scope.url || $location.path()));
-                            }, 100);
+                            }, 10);
                         });
                     });
                 },
