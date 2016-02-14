@@ -58,8 +58,6 @@ angular
                                     mini: 1
                                 }, vkSimplekHash(scope.url || $location.path()));
                             }, 10);
-
-                            console.log(vkSimplekHash(scope.url || $location.path()));
                         });
                     });
                 },
