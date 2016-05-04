@@ -1,5 +1,4 @@
-# ngVk [![Bower](https://img.shields.io/badge/bower-MIT-blue.svg)](http://bower.io) [![Ngmodules](https://img.shields.io/badge/ngmodules-package-red.svg)](http://ngmodules.org/modules/ngVk)
-[![bitHound Overall Score](https://www.bithound.io/github/shekspir55/ngVk/badges/score.svg)](https://www.bithound.io/github/shekspir55/ngVk)
+# ngVk [![Bower](https://img.shields.io/badge/bower-MIT-blue.svg)](http://bower.io) [![Ngmodules](https://img.shields.io/badge/ngmodules-package-red.svg)](http://ngmodules.org/modules/ngVk) [![bitHound Overall Score](https://www.bithound.io/github/shekspir55/ngVk/badges/score.svg)](https://www.bithound.io/github/shekspir55/ngVk)
 
 This is simple vk.com angular wrapper. Compatible with [ui.router](https://github.com/angular-ui/ui-router).
 
