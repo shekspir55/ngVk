@@ -1,6 +1,6 @@
 # ngVk [![Bower](https://img.shields.io/badge/bower-MIT-blue.svg)](http://bower.io) [![Ngmodules](https://img.shields.io/badge/ngmodules-package-red.svg)](http://ngmodules.org/modules/ngVk) [![bitHound Overall Score](https://www.bithound.io/github/shekspir55/ngVk/badges/score.svg)](https://www.bithound.io/github/shekspir55/ngVk)
 
-This is simple vk.com angular wrapper. Compatible with [ui.router](https://github.com/angular-ui/ui-router). Looking forward to your ideas on how to improve this plugin, you can write any question in [live chat](https://gitter.im/shekspir55/ngVk).
+This is simple vk.com angular wrapper. Compatible with [ui.router](https://github.com/angular-ui/ui-router). Looking forward to your ideas on how to improve this plugin, you can write any question in [live chat](https://gitter.im/shekspir55/ngVk ).:penguin:
 
 ![ngvk](https://cloud.githubusercontent.com/assets/8617379/13033413/6de59018-d326-11e5-8415-b7d6bc69d590.png)
 
