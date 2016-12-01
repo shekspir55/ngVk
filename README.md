@@ -6,7 +6,7 @@ This is simple vk.com angular wrapper. Compatible with [ui.router](https://githu
 
 View [demo](http://shekspir55.github.io/ngVk/) here.
 
-In this version only comments avialable.
+In this version only comments available.
 
 You can install with just cloning this repo or via bower.
 
